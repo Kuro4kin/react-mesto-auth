@@ -1,0 +1,8 @@
+.page-logout__link {
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+}
+
+.page-logout__link:hover {
+  color: rgba(255, 255, 255, 0.8);
+}

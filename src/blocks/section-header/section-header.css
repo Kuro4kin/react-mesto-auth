@@ -1,0 +1,27 @@
+.section-header {
+  margin: 0 200px 40px 200px;
+}
+
+@media (max-width: 1048px) {
+  .section-header {
+    margin: 0 150px 37px 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-header {
+    margin: 0 100px 37px 100px;
+  }
+}
+
+@media (max-width: 544px) {
+  .section-header {
+    margin: 0 50px 37px 50px;
+  }
+}
+
+@media (max-width: 320px) {
+  .section-header {
+    margin: 0 0 37px 0;
+  }
+}

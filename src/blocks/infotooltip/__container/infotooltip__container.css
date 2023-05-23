@@ -1,0 +1,17 @@
+.infotooltip__container {
+  position: relative;
+  width: 430px;
+  min-height: 330px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 520px) {
+  .infotooltip__container {
+    width: 282px;
+    min-height: 330px;
+  }
+}
