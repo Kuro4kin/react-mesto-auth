@@ -1,0 +1,16 @@
+.header__navbar {
+  display: flex;
+  list-style-type: none;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+@media (max-width: 700px) {
+  .header__navbar {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+}

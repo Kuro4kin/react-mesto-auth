@@ -1,0 +1,27 @@
+.section-profile {
+  margin: 0 200px 50px 200px;
+}
+
+@media (max-width: 1074px) {
+  .section-profile {
+    margin: 0 150px 50px 150px;
+  }
+}
+
+@media (max-width: 800px) {
+  .section-profile {
+    margin: 0 100px 50px 100px;
+  }
+}
+
+@media (max-width: 544px) {
+  .section-profile {
+    margin: 45px 50px 50px 50px;
+  }
+}
+
+@media (max-width: 370px) {
+  .section-profile {
+    margin: 0 19px 2px 19px;
+  }
+}
