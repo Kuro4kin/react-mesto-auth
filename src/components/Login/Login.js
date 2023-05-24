@@ -1,18 +1,10 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import { login } from "../../utils/auth.js";
-import InfoTooltip from "../InfoTooltip/InfoTooltip.js";
-import loginErrorIcon from "../../images/infotooltip-icon-err.svg";
 
 function Login(props) {
   const [formValue, setFormValue] = useState({
     email: "",
     password: "",
   });
-
-  const [isInfoTooltipOpen, setIsInfoTooltipOpen] = useState(false);
-
-  const navigate = useNavigate();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -26,25 +18,8 @@ function Login(props) {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    login(formValue)
-      .then((res) => {
-        if (res) {
-          localStorage.setItem("token", res.token);
-          props.handleLogin(true);
-          props.handleChangeUserMail(formValue.email);
-          navigate("/", { replace: true });
-        } else {
-          setIsInfoTooltipOpen(true);
-        }
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+    props.onLogin(formValue);
   };
-
-  function closeInfoTooltip() {
-    setIsInfoTooltipOpen(false);
-  }
 
   return (
     <>
@@ -74,12 +49,6 @@ function Login(props) {
           <button className="page-logout__button">Войти</button>
         </form>
       </div>
-      <InfoTooltip
-        isOpen={isInfoTooltipOpen}
-        onClose={closeInfoTooltip}
-        icon={loginErrorIcon}
-        description={"Такой пользователь не найден. Проверьте правильность заполнения."}
-      />
     </>
   );
 }
