@@ -20,6 +20,10 @@
 @import url(./blocks/infotooltip/__close-button/infotooltip__close-button.css);
 @import url(./blocks/infotooltip/__icon/infotooltip__icon.css);
 @import url(./blocks/infotooltip/__description/infotooltip__description.css);
+@import url(./blocks/page404/page404.css);
+@import url(./blocks/page404/__icon/page404__icon.css);
+@import url(./blocks/page404/__message/page404__message.css);
+@import url(./blocks/page404/__link/page404__link.css);
 @import url(./blocks/section-header/section-header.css);
 @import url(./blocks/section-profile/section-profile.css);
 @import url(./blocks/profile/profile.css);
